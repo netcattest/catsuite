@@ -1,0 +1,41 @@
+{
+  "CatSuite · Evento / Event": {
+    "prefix": "cat-evento",
+    "description": "Observar tráfego / Observe traffic",
+    "body": [
+      "cat.events.on('${1:http.complete}', async mensagem => {",
+      "  ${0}",
+      "});"
+    ]
+  },
+  "CatSuite · Aba / Tab": {
+    "prefix": "cat-aba",
+    "description": "Criar aba nativa / Create native tab",
+    "body": [
+      "cat.ui.tab.register({ id: '${1:painel}', title: { 'pt-BR': '${2:Título}', en: '${3:Title}' }, components: [",
+      "  { type: 'text', text: { 'pt-BR': '${4:Pronto}', en: '${5:Ready}' } }",
+      "] });"
+    ]
+  },
+  "CatSuite · Header": {
+    "prefix": "cat-header",
+    "description": "Handler síncrono / Synchronous handler",
+    "body": [
+      "cat.proxy.onRequest(mensagem => {",
+      "  mensagem.headers.push({ name: '${1:X-Cat-Lab}', value: '${2:studio}' });",
+      "  return mensagem;",
+      "});"
+    ]
+  },
+  "CatSuite · Achado / Finding": {
+    "prefix": "cat-achado",
+    "description": "Achado observado / Observed finding",
+    "body": [
+      "await cat.findings.add({",
+      "  title: { 'pt-BR': '${1:Configuração observada}', en: '${2:Observed configuration}' },",
+      "  description: { 'pt-BR': '${3:Descrição}', en: '${4:Description}' },",
+      "  severity: 'info', confidence: 'observed', url: '${5:https://api.aurora.test}'",
+      "});"
+    ]
+  }
+}

@@ -1,0 +1,908 @@
+{
+  "subfinder": {
+    "repo": "projectdiscovery/subfinder",
+    "tag": "v2.16.0",
+    "url": "https://github.com/projectdiscovery/subfinder/releases/tag/v2.16.0",
+    "assets": [
+      {
+        "name": "subfinder_2.16.0_checksums.txt",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_checksums.txt",
+        "digest": "sha256:f341a7eed0794bfe78deb8a1a70e3c00c2181dde921101737f093322f24531c2",
+        "size": 891
+      },
+      {
+        "name": "subfinder_2.16.0_linux_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_linux_386.zip",
+        "digest": "sha256:64b57772588d446b3cf1d3acf73eaeb73299c23e5d9c8d28b5516bee4889e6d0",
+        "size": 9475735
+      },
+      {
+        "name": "subfinder_2.16.0_linux_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_linux_amd64.zip",
+        "digest": "sha256:1b7f9c608e9a5bd59e609a5e09710d63c5485e92d3d49dc2c16eb4fdbe10cb60",
+        "size": 10011380
+      },
+      {
+        "name": "subfinder_2.16.0_linux_arm.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_linux_arm.zip",
+        "digest": "sha256:b6d0e7fb118988e49910614fddf9f23f952e797b45ede700bf730ff2eada9da7",
+        "size": 9564763
+      },
+      {
+        "name": "subfinder_2.16.0_linux_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_linux_arm64.zip",
+        "digest": "sha256:c81d49559c0f630177be9e347e502e7a3d474aacc6ff78291ffcb4964367d63d",
+        "size": 9134128
+      },
+      {
+        "name": "subfinder_2.16.0_macOS_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_macOS_amd64.zip",
+        "digest": "sha256:8300c4d98f75596b7e8460ba6f3322dfeda4674bc2bcbde14d61d098db260b50",
+        "size": 10245741
+      },
+      {
+        "name": "subfinder_2.16.0_macOS_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_macOS_arm64.zip",
+        "digest": "sha256:af55827c9e6cdc530cca377ad459214ead16daf1b79d90e3dcefa387f644e057",
+        "size": 9603227
+      },
+      {
+        "name": "subfinder_2.16.0_windows_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_windows_386.zip",
+        "digest": "sha256:8c71dec8cd03b53a4128a962f2c51495ab26cbd7eda8c07f4bfceacaeb1e0472",
+        "size": 9888217
+      },
+      {
+        "name": "subfinder_2.16.0_windows_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_windows_amd64.zip",
+        "digest": "sha256:ef760f0a064c22811100c75a61da35ba73d71398cb99ae85d32d0eed44496ab8",
+        "size": 10264416
+      },
+      {
+        "name": "subfinder_2.16.0_windows_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/subfinder/releases/download/v2.16.0/subfinder_2.16.0_windows_arm64.zip",
+        "digest": "sha256:442ab5a802953035767cddafc05a988df9625249e5695af9ee3a4d731c7ff60b",
+        "size": 9163263
+      }
+    ]
+  },
+  "dnsx": {
+    "repo": "projectdiscovery/dnsx",
+    "tag": "v1.3.1",
+    "url": "https://github.com/projectdiscovery/dnsx/releases/tag/v1.3.1",
+    "assets": [
+      {
+        "name": "dnsx_1.3.1_checksums.txt",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_checksums.txt",
+        "digest": "sha256:f8e6af7efa743a506ec18b0c0b7b8c3f562dc7832b369101c3ad0fbd6e166085",
+        "size": 742
+      },
+      {
+        "name": "dnsx_1.3.1_linux_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_linux_386.zip",
+        "digest": "sha256:779ed8f5766d3a9fd86d1a7ae84fd88e30d36a42c01f2f8a653a598ccf3bcc85",
+        "size": 9294066
+      },
+      {
+        "name": "dnsx_1.3.1_linux_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_linux_amd64.zip",
+        "digest": "sha256:438b964653056dd51dcfe614b1a16f8bced3cc48a1d27bc07cc6fdf2ef2a9533",
+        "size": 9829391
+      },
+      {
+        "name": "dnsx_1.3.1_linux_arm.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_linux_arm.zip",
+        "digest": "sha256:567a48de102ac59e1d79648fe7cd43139f26a2a0a5280dc9667b0d081b14fe79",
+        "size": 9370472
+      },
+      {
+        "name": "dnsx_1.3.1_linux_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_linux_arm64.zip",
+        "digest": "sha256:dd657dd1ccee5e137eca2dbad0e97dbd067555f744adb97efcda774f1b2fbde1",
+        "size": 8943209
+      },
+      {
+        "name": "dnsx_1.3.1_macOS_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_macOS_amd64.zip",
+        "digest": "sha256:ade8207185467df3768f08993a1b0140cdec5b5d2b735dc2213b90de5a2d3a1c",
+        "size": 10061835
+      },
+      {
+        "name": "dnsx_1.3.1_macOS_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_macOS_arm64.zip",
+        "digest": "sha256:6b1681e4168cf6175facea723e16fca4ca2f99c3f9f83dea8c2b79ed20a3f417",
+        "size": 9397450
+      },
+      {
+        "name": "dnsx_1.3.1_windows_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_windows_386.zip",
+        "digest": "sha256:8a891de5660d0ce6ff7c68d00758c0d34c49bfd75d51a1d4b00eec4733101e2e",
+        "size": 9697090
+      },
+      {
+        "name": "dnsx_1.3.1_windows_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/dnsx/releases/download/v1.3.1/dnsx_1.3.1_windows_amd64.zip",
+        "digest": "sha256:112c2d62d67d26a1b940ed9d10d500d2aa1ee3e3e18393d181ac4969936b9d96",
+        "size": 10077681
+      }
+    ]
+  },
+  "alterx": {
+    "repo": "projectdiscovery/alterx",
+    "tag": "v0.1.0",
+    "url": "https://github.com/projectdiscovery/alterx/releases/tag/v0.1.0",
+    "assets": [
+      {
+        "name": "alterx_0.1.0_checksums.txt",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_checksums.txt",
+        "digest": "sha256:f5138af8094657d89b664e9104ae985fedd674f1ebc2ec886b7a4d1bebc368de",
+        "size": 758
+      },
+      {
+        "name": "alterx_0.1.0_linux_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_linux_386.zip",
+        "digest": "sha256:243fd0d89a53f8030af088c93e59025524599a4131db14f9f344cfca171d159b",
+        "size": 6814805
+      },
+      {
+        "name": "alterx_0.1.0_linux_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_linux_amd64.zip",
+        "digest": "sha256:ffae5b25138cb27b58900b9b5849e02d0390385fce404252d32e469f2a0e97ac",
+        "size": 7227762
+      },
+      {
+        "name": "alterx_0.1.0_linux_arm.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_linux_arm.zip",
+        "digest": "sha256:1e47eea003a396f70e5ee6940ab5e429755177b976ded0785f404530cdb7db5d",
+        "size": 6874971
+      },
+      {
+        "name": "alterx_0.1.0_linux_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_linux_arm64.zip",
+        "digest": "sha256:14dfdaebfee0ecce559afacf62e9e15e9f8aa7dd8a2a659d9e0b3bc2dbb4419f",
+        "size": 6620229
+      },
+      {
+        "name": "alterx_0.1.0_macOS_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_macOS_amd64.zip",
+        "digest": "sha256:ae1b9182747ff0e4987d84aa1b6d9f8f946f205e5654244cdce392e0e6adfb09",
+        "size": 7375285
+      },
+      {
+        "name": "alterx_0.1.0_macOS_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_macOS_arm64.zip",
+        "digest": "sha256:57b6dc889e92fc7541b10a21e9979992cb67e0b175d525771f254fa0e5e9c508",
+        "size": 6914246
+      },
+      {
+        "name": "alterx_0.1.0_windows_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_windows_386.zip",
+        "digest": "sha256:86704abe1453fd80f7dd66e51ec4e23872e88a90887daf9ad03dc1c53f812532",
+        "size": 7144671
+      },
+      {
+        "name": "alterx_0.1.0_windows_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/alterx/releases/download/v0.1.0/alterx_0.1.0_windows_amd64.zip",
+        "digest": "sha256:d50bd6d18bc3333300e30e78b1419afbaeab50633232423c585667182c311c37",
+        "size": 7440104
+      }
+    ]
+  },
+  "uncover": {
+    "repo": "projectdiscovery/uncover",
+    "tag": "v1.2.1",
+    "url": "https://github.com/projectdiscovery/uncover/releases/tag/v1.2.1",
+    "assets": [
+      {
+        "name": "uncover_1.2.1_checksums.txt",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_checksums.txt",
+        "digest": "sha256:c97782f0e30b7bde9473beb101989eb854d9c2c1df029c298d3be9f61b5e97fa",
+        "size": 766
+      },
+      {
+        "name": "uncover_1.2.1_linux_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_linux_386.zip",
+        "digest": "sha256:284ee895f0b5d2e5ff13276866e7031a95529907a11c34abd23db5d1b9d8106e",
+        "size": 9717029
+      },
+      {
+        "name": "uncover_1.2.1_linux_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_linux_amd64.zip",
+        "digest": "sha256:72cfa1ceaf72ce499a0ed520b738178a99d369321dbc8e10f01e1dd6e1119322",
+        "size": 10251877
+      },
+      {
+        "name": "uncover_1.2.1_linux_arm.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_linux_arm.zip",
+        "digest": "sha256:1e6c42657957495f71494f74ec368b61293819b0f7ceee471d1cd020d92bad4e",
+        "size": 9792730
+      },
+      {
+        "name": "uncover_1.2.1_linux_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_linux_arm64.zip",
+        "digest": "sha256:c7b1341708ae877189cf58ca3039b0973e520285e3cd2c314961500163e076bf",
+        "size": 9481566
+      },
+      {
+        "name": "uncover_1.2.1_macOS_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_macOS_amd64.zip",
+        "digest": "sha256:247d6e30bfdf002357fa42c807c3e63cc089b141e0b7a8710f97da7fe35971af",
+        "size": 10501135
+      },
+      {
+        "name": "uncover_1.2.1_macOS_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_macOS_arm64.zip",
+        "digest": "sha256:c569a9162bd40d707defc6153ed724f9f4ec8e18c1d2c097e3e3a413f385fa1e",
+        "size": 9954029
+      },
+      {
+        "name": "uncover_1.2.1_windows_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_windows_386.zip",
+        "digest": "sha256:31f02926d8a9071b8b4486b97c93451fa309fcc652a0891ff3065866a4a84f28",
+        "size": 10135491
+      },
+      {
+        "name": "uncover_1.2.1_windows_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/uncover/releases/download/v1.2.1/uncover_1.2.1_windows_amd64.zip",
+        "digest": "sha256:09e10b9e0c8b0ec723b86d56af8f3b416bb462d6c85c831e53eeaf678d8f61fd",
+        "size": 10510935
+      }
+    ]
+  },
+  "naabu": {
+    "repo": "projectdiscovery/naabu",
+    "tag": "v2.6.1",
+    "url": "https://github.com/projectdiscovery/naabu/releases/tag/v2.6.1",
+    "assets": [
+      {
+        "name": "naabu-checksums.txt",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu-checksums.txt",
+        "digest": "sha256:9f973d15c20f415565ecd7a40a4c563a414a1ec0a34d28cd514a6598cec64b5d",
+        "size": 566
+      },
+      {
+        "name": "naabu_2.6.1_linux_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_linux_amd64.zip",
+        "digest": "sha256:018c4c9884dea971eda860435ede3021d1150732f34cfd245498c6726d8cab90",
+        "size": 11858775
+      },
+      {
+        "name": "naabu_2.6.1_linux_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_linux_arm64.zip",
+        "digest": "sha256:3adc2bb2395c3efff89623499b20eea66ef54924c485d3ae86762393a31736ea",
+        "size": 10945734
+      },
+      {
+        "name": "naabu_2.6.1_macOS_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_macOS_amd64.zip",
+        "digest": "sha256:b26e2d7fb91b833ac38cb7abb810cb8af6e7f6489a1c298cb63e584cd1f890a2",
+        "size": 12104192
+      },
+      {
+        "name": "naabu_2.6.1_macOS_arm64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_macOS_arm64.zip",
+        "digest": "sha256:2f3a100210ddd42d8cf49ae30210c9823488b4687e2b7a869ab0ffc64b26cfba",
+        "size": 11443993
+      },
+      {
+        "name": "naabu_2.6.1_windows_386.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_windows_386.zip",
+        "digest": "sha256:c265902e5ef7f1d064c9a8ed2c738e5d5b1808da4ca292f1f9d33f304e606309",
+        "size": 11662172
+      },
+      {
+        "name": "naabu_2.6.1_windows_amd64.zip",
+        "browser_download_url": "https://github.com/projectdiscovery/naabu/releases/download/v2.6.1/naabu_2.6.1_windows_amd64.zip",
+        "digest": "sha256:4efaa341f36a0c6e676164f75e2d93d5a72f4090d690fd1bc293f5a4b79c202b",
+        "size": 12042383
+      }
+    ]
+  },
+  "ffuf": {
+    "repo": "ffuf/ffuf",
+    "tag": "v2.3.0",
+    "url": "https://github.com/ffuf/ffuf/releases/tag/v2.3.0",
+    "assets": [
+      {
+        "name": "ffuf_2.3.0_checksums.txt",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_checksums.txt",
+        "digest": "sha256:e23603e903d40453c8bd477561466d494db0e502f2dccbd93926378fead9d0f0",
+        "size": 1539
+      },
+      {
+        "name": "ffuf_2.3.0_checksums.txt.sig",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_checksums.txt.sig",
+        "digest": "sha256:a410670e1ae67223d99d0e2c2c54968142dc3460497e2ad61bcf29b97e38fe6d",
+        "size": 119
+      },
+      {
+        "name": "ffuf_2.3.0_freebsd_386.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_freebsd_386.tar.gz",
+        "digest": "sha256:e6d3724f9b48e664264cd34a9cbdb5a46a109594893d6d8ef4fb4fcf2593477d",
+        "size": 4204471
+      },
+      {
+        "name": "ffuf_2.3.0_freebsd_amd64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_freebsd_amd64.tar.gz",
+        "digest": "sha256:9a5cc97b65853548f133d822cf8dc153d9a2787a21d887653decde62a84d63dc",
+        "size": 4339087
+      },
+      {
+        "name": "ffuf_2.3.0_freebsd_armv6.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_freebsd_armv6.tar.gz",
+        "digest": "sha256:c8eb8b7a9378cc74a012887bc1c09c98b6a349f8da5853d5e89ef8bbb165cf6d",
+        "size": 4177329
+      },
+      {
+        "name": "ffuf_2.3.0_linux_386.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_386.tar.gz",
+        "digest": "sha256:8ac66dc4cf09953f05f0d48abcf2f383b74554b1a34699c91a430e08950bcc31",
+        "size": 4236049
+      },
+      {
+        "name": "ffuf_2.3.0_linux_amd64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_amd64.tar.gz",
+        "digest": "sha256:b2a3c725fcb9da175159682f54d6e9149f2905b00d84d155e7efc5d599975ceb",
+        "size": 4367536
+      },
+      {
+        "name": "ffuf_2.3.0_linux_arm64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_arm64.tar.gz",
+        "digest": "sha256:e2d712615d53da797ee929006e41f2df5a7960a5353133db9c150ddaa22ae4e8",
+        "size": 3950470
+      },
+      {
+        "name": "ffuf_2.3.0_linux_armv6.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_linux_armv6.tar.gz",
+        "digest": "sha256:d1808e8b4a5e3c7362d95f174094e9bfc76cdf47bb35aea3b19b23c7c8fc1f4f",
+        "size": 4202316
+      },
+      {
+        "name": "ffuf_2.3.0_macOS_amd64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_macOS_amd64.tar.gz",
+        "digest": "sha256:c1d1a0320b299d2c7f3a62163b336fe861954ea865bab13b9e80f128eb985997",
+        "size": 4432897
+      },
+      {
+        "name": "ffuf_2.3.0_macOS_arm64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_macOS_arm64.tar.gz",
+        "digest": "sha256:891e6358f7c72c951ce6fcef82a3736e91b34034e95edbd305505c9d31cfff13",
+        "size": 4103832
+      },
+      {
+        "name": "ffuf_2.3.0_openbsd_386.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_openbsd_386.tar.gz",
+        "digest": "sha256:e186c5df4a1cbf1218600442fb38423d2d5d81ab7bbd87fe78e03710ad77d9c5",
+        "size": 4203425
+      },
+      {
+        "name": "ffuf_2.3.0_openbsd_amd64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_openbsd_amd64.tar.gz",
+        "digest": "sha256:39d41575e148a9dd99943ae2b047ffaa87c7f01c94c478c517ede58960b4dca6",
+        "size": 4336701
+      },
+      {
+        "name": "ffuf_2.3.0_openbsd_arm64.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_openbsd_arm64.tar.gz",
+        "digest": "sha256:ba04512813cc6221e7df26e9f124193c35487fdd6b730afea2986879194d1db1",
+        "size": 3925644
+      },
+      {
+        "name": "ffuf_2.3.0_openbsd_armv6.tar.gz",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_openbsd_armv6.tar.gz",
+        "digest": "sha256:c1b49891d2c8499a041dab5b7dcac6227a1b1abeb614b8a390dc063a2b83652c",
+        "size": 4173754
+      },
+      {
+        "name": "ffuf_2.3.0_windows_386.zip",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_windows_386.zip",
+        "digest": "sha256:a07bafba109d7ea9f0ec6fa314d24572cd8b3148dfbc81d6c8b2a8b44618786c",
+        "size": 4426025
+      },
+      {
+        "name": "ffuf_2.3.0_windows_amd64.zip",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_windows_amd64.zip",
+        "digest": "sha256:091c8a22d0c7fbe07d343b3ae2c213dbd37b38a8a2ed40631fcd3128ea1764fb",
+        "size": 4497208
+      },
+      {
+        "name": "ffuf_2.3.0_windows_arm64.zip",
+        "browser_download_url": "https://github.com/ffuf/ffuf/releases/download/v2.3.0/ffuf_2.3.0_windows_arm64.zip",
+        "digest": "sha256:8b119b5ba25c8ac0a8c029fbf62f9e92ed3ec80d4ecb8275703892c8574ce15c",
+        "size": 4027646
+      }
+    ]
+  },
+  "gau": {
+    "repo": "lc/gau",
+    "tag": "v2.2.4",
+    "url": "https://github.com/lc/gau/releases/tag/v2.2.4",
+    "assets": [
+      {
+        "name": "gau_2.2.4_checksums.txt",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_checksums.txt",
+        "digest": null,
+        "size": 661
+      },
+      {
+        "name": "gau_2.2.4_checksums.txt.sig",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_checksums.txt.sig",
+        "digest": null,
+        "size": 438
+      },
+      {
+        "name": "gau_2.2.4_darwin_amd64.tar.gz",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_darwin_amd64.tar.gz",
+        "digest": null,
+        "size": 3604518
+      },
+      {
+        "name": "gau_2.2.4_darwin_arm64.tar.gz",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_darwin_arm64.tar.gz",
+        "digest": null,
+        "size": 3374661
+      },
+      {
+        "name": "gau_2.2.4_linux_386.tar.gz",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_linux_386.tar.gz",
+        "digest": null,
+        "size": 3347697
+      },
+      {
+        "name": "gau_2.2.4_linux_amd64.tar.gz",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_linux_amd64.tar.gz",
+        "digest": null,
+        "size": 3572231
+      },
+      {
+        "name": "gau_2.2.4_linux_arm64.tar.gz",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_linux_arm64.tar.gz",
+        "digest": null,
+        "size": 3259519
+      },
+      {
+        "name": "gau_2.2.4_windows_386.zip",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_windows_386.zip",
+        "digest": null,
+        "size": 3480124
+      },
+      {
+        "name": "gau_2.2.4_windows_amd64.zip",
+        "browser_download_url": "https://github.com/lc/gau/releases/download/v2.2.4/gau_2.2.4_windows_amd64.zip",
+        "digest": null,
+        "size": 3639401
+      }
+    ]
+  },
+  "waybackurls": {
+    "repo": "tomnomnom/waybackurls",
+    "tag": "v0.1.0",
+    "url": "https://github.com/tomnomnom/waybackurls/releases/tag/v0.1.0",
+    "assets": [
+      {
+        "name": "waybackurls-darwin-amd64-0.1.0.tgz",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-darwin-amd64-0.1.0.tgz",
+        "digest": null,
+        "size": 3698414
+      },
+      {
+        "name": "waybackurls-freebsd-386-0.1.0.tgz",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-freebsd-386-0.1.0.tgz",
+        "digest": null,
+        "size": 3812097
+      },
+      {
+        "name": "waybackurls-freebsd-amd64-0.1.0.tgz",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-freebsd-amd64-0.1.0.tgz",
+        "digest": null,
+        "size": 3793531
+      },
+      {
+        "name": "waybackurls-linux-386-0.1.0.tgz",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-linux-386-0.1.0.tgz",
+        "digest": null,
+        "size": 3815843
+      },
+      {
+        "name": "waybackurls-linux-amd64-0.1.0.tgz",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-linux-amd64-0.1.0.tgz",
+        "digest": null,
+        "size": 3822639
+      },
+      {
+        "name": "waybackurls-windows-386-0.1.0.zip",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-windows-386-0.1.0.zip",
+        "digest": null,
+        "size": 3747912
+      },
+      {
+        "name": "waybackurls-windows-amd64-0.1.0.zip",
+        "browser_download_url": "https://github.com/tomnomnom/waybackurls/releases/download/v0.1.0/waybackurls-windows-amd64-0.1.0.zip",
+        "digest": null,
+        "size": 3689528
+      }
+    ]
+  },
+  "dalfox": {
+    "repo": "hahwul/dalfox",
+    "tag": "v3.2.3",
+    "url": "https://github.com/hahwul/dalfox/releases/tag/v3.2.3",
+    "assets": [
+      {
+        "name": "checksum.txt",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/checksum.txt",
+        "digest": "sha256:e04f424a93f6af91364d243df68f9baeb56b2c060e67e30c2d14937643d7f514",
+        "size": 155
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64-musl.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64-musl.tar.gz",
+        "digest": "sha256:766ad472a1445e73a5b4920af46ffefb2d8de8f0f8ff941fddac2dcb8f5025d8",
+        "size": 5873445
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64-musl.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64-musl.tar.gz.sha256",
+        "digest": "sha256:f35ede7f69e77b4e1b5d110389849cadc92fb0aed332bc3946fb3c3b81d58763",
+        "size": 106
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.deb",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.deb",
+        "digest": "sha256:aad4643366e5a97c6dd3b889bf2ef947b0e787b2a90cd466edc710616ae2a274",
+        "size": 3968944
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.deb.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.deb.sha256",
+        "digest": "sha256:25fc4330ecb57d2e3b6e309295aeb4096296d7f0607d8d4f07b0d9f82575d960",
+        "size": 98
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.rpm",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.rpm",
+        "digest": "sha256:367eb197d765bb4d4c1c4363d1c0be9a327e96230013572c3f58a43aedc86e22",
+        "size": 4622559
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.rpm.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.rpm.sha256",
+        "digest": "sha256:e2567c2b2c673afbe5171ba0c75cd278aaf9e9083d1c3c32a526eed606c50cbc",
+        "size": 98
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.tar.gz",
+        "digest": "sha256:a7074d1001bb66664c1ed2db35d4b892a8f11da4d07f4deede1da8bfe7992d2b",
+        "size": 5908277
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-aarch64.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-aarch64.tar.gz.sha256",
+        "digest": "sha256:8848932ed254f3ac44aef83e9aa5e009c174a8a1f39df3bc1f59e4c86ca8c31b",
+        "size": 101
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64-musl.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64-musl.tar.gz",
+        "digest": "sha256:66fc27d8d3ab223f0bc79616f0baf55a493b9ebe32941a14fe77ea2fb5f5364d",
+        "size": 6370074
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64-musl.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64-musl.tar.gz.sha256",
+        "digest": "sha256:89cab807539723fcce20ef908cad5a6e4e77d5fb82a97cccbd14d0ff6332421b",
+        "size": 105
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.deb",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.deb",
+        "digest": "sha256:6f4c68b01c13d6eb2fded1a14827701651451b9225c679a70689ec2dcaab231f",
+        "size": 4486868
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.deb.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.deb.sha256",
+        "digest": "sha256:1e3a84f0bb881017310f63d0faead8d1be239bf2b91b8980f578c519151a590d",
+        "size": 97
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.rpm",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.rpm",
+        "digest": "sha256:36f936f4e36b6249a3402b10f530a4ab91972f9916bc662e718b4e7f62be7b94",
+        "size": 4861187
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.rpm.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.rpm.sha256",
+        "digest": "sha256:f194e2c33dcb3ecbfe7609aefa3267b6baa518acf2f69df2b17f8300f1d1eea9",
+        "size": 97
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.tar.gz",
+        "digest": "sha256:3b059b6bb55e686b5f240852ea6a6750aa5e35a3b404e4027ffe505e2b60a470",
+        "size": 6263996
+      },
+      {
+        "name": "dalfox-v3.2.3-linux-x86_64.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-linux-x86_64.tar.gz.sha256",
+        "digest": "sha256:ecdffa37c141b9c9c48a7a1ef204b9ba59f878960f4d65798bfcadfa05dde8fa",
+        "size": 100
+      },
+      {
+        "name": "dalfox-v3.2.3-macos-aarch64.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-macos-aarch64.tar.gz",
+        "digest": "sha256:b8cd129ec42663456f515cb5f655a38bb55e3ed5fcdfa8249c8306116898ac6b",
+        "size": 5630464
+      },
+      {
+        "name": "dalfox-v3.2.3-macos-aarch64.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-macos-aarch64.tar.gz.sha256",
+        "digest": "sha256:7889cfd0142831546a51926aad0b180db759816bdf2b012a67a889260aecdcfc",
+        "size": 101
+      },
+      {
+        "name": "dalfox-v3.2.3-macos-x86_64.tar.gz",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-macos-x86_64.tar.gz",
+        "digest": "sha256:ec5edf21819ec2987c56afefb99533278992b03440b2f3f145f5c18c98f90b9b",
+        "size": 6080469
+      },
+      {
+        "name": "dalfox-v3.2.3-macos-x86_64.tar.gz.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-macos-x86_64.tar.gz.sha256",
+        "digest": "sha256:d491b72419f0a3686944b1bc34ed7d12e6b2d70487e6242088f2e20c180077c0",
+        "size": 100
+      },
+      {
+        "name": "dalfox-v3.2.3-windows-x86_64.zip",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-windows-x86_64.zip",
+        "digest": "sha256:0ad74b8937104d4603dea54c7e8d9d17e6802383a5f8b8133c7f55f19759e4a8",
+        "size": 6452395
+      },
+      {
+        "name": "dalfox-v3.2.3-windows-x86_64.zip.sha256",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox-v3.2.3-windows-x86_64.zip.sha256",
+        "digest": "sha256:cece0434b1593ff9556af58ff70ee128f775de25d39687880ec633f6cb7340e2",
+        "size": 169
+      },
+      {
+        "name": "dalfox.cdx.xml",
+        "browser_download_url": "https://github.com/hahwul/dalfox/releases/download/v3.2.3/dalfox.cdx.xml",
+        "digest": "sha256:bf0124e34e143ad9e07ec3664bf11897e78ed2939a8019ea75c00a4334a508dd",
+        "size": 359417
+      }
+    ]
+  },
+  "gitleaks": {
+    "repo": "gitleaks/gitleaks",
+    "tag": "v8.30.1",
+    "url": "https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1",
+    "assets": [
+      {
+        "name": "gitleaks_8.30.1_checksums.txt",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_checksums.txt",
+        "digest": "sha256:061476c21adaf5441516f96f185c1a4706a83cd6329b9b38762271b3d4a52fae",
+        "size": 999
+      },
+      {
+        "name": "gitleaks_8.30.1_darwin_arm64.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_darwin_arm64.tar.gz",
+        "digest": "sha256:b40ab0ae55c505963e365f271a8d3846efbc170aa17f2607f13df610a9aeb6a5",
+        "size": 7897593
+      },
+      {
+        "name": "gitleaks_8.30.1_darwin_x64.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_darwin_x64.tar.gz",
+        "digest": "sha256:dfe101a4db2255fc85120ac7f3d25e4342c3c20cf749f2c20a18081af1952709",
+        "size": 8359235
+      },
+      {
+        "name": "gitleaks_8.30.1_linux_arm64.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_arm64.tar.gz",
+        "digest": "sha256:e4a487ee7ccd7d3a7f7ec08657610aa3606637dab924210b3aee62570fb4b080",
+        "size": 7601421
+      },
+      {
+        "name": "gitleaks_8.30.1_linux_armv6.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_armv6.tar.gz",
+        "digest": "sha256:5c2a4ee657a27614e10352bed2b8f1018ef9b05fc6c037cf737776bbe1255766",
+        "size": 7515485
+      },
+      {
+        "name": "gitleaks_8.30.1_linux_armv7.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_armv7.tar.gz",
+        "digest": "sha256:8d39f0d94ba0d774b2282187656fb039a2d82893ec1fd6be7d7121aae759a57d",
+        "size": 7501622
+      },
+      {
+        "name": "gitleaks_8.30.1_linux_x32.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x32.tar.gz",
+        "digest": "sha256:a87ba11adab22b4d6c6ea28b2da60f09154d5c2fdb44d4b07015d1e0433daecb",
+        "size": 7634107
+      },
+      {
+        "name": "gitleaks_8.30.1_linux_x64.tar.gz",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz",
+        "digest": "sha256:551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb",
+        "size": 8230402
+      },
+      {
+        "name": "gitleaks_8.30.1_windows_arm64.zip",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_arm64.zip",
+        "digest": "sha256:b95f5e4f5c425cedca7ee203d9afd29597e692c4924a12ed42f970537c72cc0f",
+        "size": 7701820
+      },
+      {
+        "name": "gitleaks_8.30.1_windows_x32.zip",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_x32.zip",
+        "digest": "sha256:190ad53db301eec3e90afe3a1a75270768b8ebf89e731345e19421c32c1ae1a1",
+        "size": 7912746
+      },
+      {
+        "name": "gitleaks_8.30.1_windows_x64.zip",
+        "browser_download_url": "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_windows_x64.zip",
+        "digest": "sha256:d29144deff3a68aa93ced33dddf84b7fdc26070add4aa0f4513094c8332afc4e",
+        "size": 8438883
+      }
+    ]
+  },
+  "trufflehog": {
+    "repo": "trufflesecurity/trufflehog",
+    "tag": "v3.97.9",
+    "url": "https://github.com/trufflesecurity/trufflehog/releases/tag/v3.97.9",
+    "assets": [
+      {
+        "name": "trufflehog_3.97.9_checksums.txt",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_checksums.txt",
+        "digest": "sha256:d8a2807fd8019f3db10308365bdfc818c07ae86f4e7e22839e41f77f9b27f93f",
+        "size": 624
+      },
+      {
+        "name": "trufflehog_3.97.9_checksums.txt.pem",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_checksums.txt.pem",
+        "digest": "sha256:16c8e54ab6d5f61c29cf9171a130ec36c98ec1f2b71123b2596548934f7e9288",
+        "size": 3412
+      },
+      {
+        "name": "trufflehog_3.97.9_checksums.txt.sig",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_checksums.txt.sig",
+        "digest": "sha256:f31e588b20e9c46d6fe88f1afeab065d526590fb7e6723f59fce258718ae503d",
+        "size": 96
+      },
+      {
+        "name": "trufflehog_3.97.9_darwin_amd64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_darwin_amd64.tar.gz",
+        "digest": "sha256:4451ba8d17106da0d0a2f1952d3b1c2d20a6e5c97c21ccd1f8fc04ecf2ff77d9",
+        "size": 77962751
+      },
+      {
+        "name": "trufflehog_3.97.9_darwin_arm64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_darwin_arm64.tar.gz",
+        "digest": "sha256:3d25c178fe1a2563687b22547adcaebcf08cc8a607315c6741fe396c597951f7",
+        "size": 73835799
+      },
+      {
+        "name": "trufflehog_3.97.9_linux_amd64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_linux_amd64.tar.gz",
+        "digest": "sha256:40377e6572495412fb9ba0bc21c9401f73b72f1d2afd11b9931bc4a5ed622866",
+        "size": 35298504
+      },
+      {
+        "name": "trufflehog_3.97.9_linux_arm64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_linux_arm64.tar.gz",
+        "digest": "sha256:372c568695d49e53517075b5f74d1ee9a19053f13661d689c7928ee1fc27d705",
+        "size": 29626356
+      },
+      {
+        "name": "trufflehog_3.97.9_windows_amd64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_windows_amd64.tar.gz",
+        "digest": "sha256:7436c13a12f378738db1b65803b00fa3b816db3dc28084e52b9a377c6b12901d",
+        "size": 75469478
+      },
+      {
+        "name": "trufflehog_3.97.9_windows_arm64.tar.gz",
+        "browser_download_url": "https://github.com/trufflesecurity/trufflehog/releases/download/v3.97.9/trufflehog_3.97.9_windows_arm64.tar.gz",
+        "digest": "sha256:962afa10be34e3a9039b9f1e0315213cf3c164452edadc9503bcd24f7f6f1e62",
+        "size": 69002364
+      }
+    ]
+  },
+  "amass": {
+    "repo": "owasp-amass/amass",
+    "tag": "v5.1.1",
+    "url": "https://github.com/owasp-amass/amass/releases/tag/v5.1.1",
+    "assets": [
+      {
+        "name": "amass_checksums.txt",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_checksums.txt",
+        "digest": "sha256:a60868b74224103351e79e94b190f2db9ef813a01fb0bc291b00163f3b4287fa",
+        "size": 730
+      },
+      {
+        "name": "amass_darwin_amd64.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_darwin_amd64.tar.gz",
+        "digest": "sha256:a27afa05b41f3245627047796a52d2d3ffac8597b4c640406c81e1759b84a572",
+        "size": 17938891
+      },
+      {
+        "name": "amass_darwin_arm64.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_darwin_arm64.tar.gz",
+        "digest": "sha256:80d4790fde96647638111bb4d984098f36e08f4323a0823df0e939570a0a256f",
+        "size": 17080419
+      },
+      {
+        "name": "amass_linux_386.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_linux_386.tar.gz",
+        "digest": "sha256:1d5920450728eebc8d2e63f69213e185173c96a13ce15c4fe184f1ffe0ee1311",
+        "size": 16183850
+      },
+      {
+        "name": "amass_linux_amd64.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_linux_amd64.tar.gz",
+        "digest": "sha256:5e22b5f0239e7eb79439d60d43d3cd20dca2478588bc2242e91ab0c4f8fa40dd",
+        "size": 17107726
+      },
+      {
+        "name": "amass_linux_arm64.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_linux_arm64.tar.gz",
+        "digest": "sha256:d05aace46ca5216f91226ffd23eeb4ce8ad2aa2548efe3a2bd59e81e6b0765b5",
+        "size": 15840537
+      },
+      {
+        "name": "amass_linux_armv6.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_linux_armv6.tar.gz",
+        "digest": "sha256:1cde3ea1cb10943f18a0f19f971a9762b7eea3709dc441836adf42997b9634d2",
+        "size": 16427481
+      },
+      {
+        "name": "amass_linux_armv7.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_linux_armv7.tar.gz",
+        "digest": "sha256:122e8701fe0311fc54218bf749df7375513bce0406818842b0f0a19a1b5962cb",
+        "size": 16409825
+      },
+      {
+        "name": "amass_windows_amd64.tar.gz",
+        "browser_download_url": "https://github.com/owasp-amass/amass/releases/download/v5.1.1/amass_windows_amd64.tar.gz",
+        "digest": "sha256:734aee6ce014c246e21f682bd49a42739e8c5feae32f6ec8a13fa2b8dc547b9f",
+        "size": 17422251
+      }
+    ]
+  },
+  "sqlmap": {
+    "repo": "sqlmapproject/sqlmap",
+    "tag": "1.10",
+    "url": "https://github.com/sqlmapproject/sqlmap/releases/tag/1.10",
+    "assets": []
+  },
+  "arjun": {
+    "repo": "s0md3v/Arjun",
+    "tag": "2.2.7",
+    "url": "https://github.com/s0md3v/Arjun/releases/tag/2.2.7",
+    "assets": []
+  },
+  "jwt_tool": {
+    "repo": "ticarpi/jwt_tool",
+    "tag": "v2.3.0",
+    "url": "https://github.com/ticarpi/jwt_tool/releases/tag/v2.3.0",
+    "assets": []
+  },
+  "testssl": {
+    "repo": "testssl/testssl.sh",
+    "tag": "v3.2.4",
+    "url": "https://github.com/testssl/testssl.sh/releases/tag/v3.2.4",
+    "assets": []
+  },
+  "nikto": {
+    "repo": "sullo/nikto",
+    "tag": "2.6.1",
+    "url": "https://github.com/sullo/nikto/releases/tag/2.6.1",
+    "assets": []
+  },
+  "semgrep": {
+    "repo": "semgrep/semgrep",
+    "tag": "v1.179.0",
+    "url": "https://github.com/semgrep/semgrep/releases/tag/v1.179.0",
+    "assets": []
+  }
+}

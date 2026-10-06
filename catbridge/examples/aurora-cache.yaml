@@ -1,0 +1,20 @@
+id: aurora-cache-laboratory
+info:
+  name: Aurora fictional cache policy
+  author: CatSuite Laboratory
+  severity: info
+  description: Observes a cache header in the local fictional laboratory. Does not demonstrate exploitation.
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/api/perfil"
+    matchers-condition: and
+    matchers:
+      - type: word
+        part: header
+        words:
+          - "X-Cat-Lab: aurora"
+      - type: word
+        part: header
+        words:
+          - "public, max-age=3600"

@@ -1,0 +1,8 @@
+{
+  "scopeName": "source.catsuite",
+  "patterns": [
+    {
+      "include": "source.js"
+    }
+  ]
+}

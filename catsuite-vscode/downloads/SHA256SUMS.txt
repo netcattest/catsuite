@@ -1,0 +1,1 @@
+3acde8dc53472dcae1d0760d470a40bfecffe91b8f278f1dcb32a99e0670f25d  catsuite-studio-1.2.0.vsix

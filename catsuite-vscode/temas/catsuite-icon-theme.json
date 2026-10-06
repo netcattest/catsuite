@@ -1,0 +1,40 @@
+{
+  "iconDefinitions": {
+    "plugin": {
+      "iconPath": "../midia/icone.png"
+    },
+    "fluxo": {
+      "iconPath": "../midia/fluxo.svg"
+    },
+    "dados": {
+      "iconPath": "../midia/dados.svg"
+    },
+    "pasta": {
+      "iconPath": "../midia/pasta.svg"
+    },
+    "codigo": {
+      "iconPath": "../midia/codigo.svg"
+    }
+  },
+  "file": "codigo",
+  "folder": "pasta",
+  "folderExpanded": "pasta",
+  "fileExtensions": {
+    "catplug": "plugin",
+    "catflow": "fluxo",
+    "catdata": "dados",
+    "catkey": "dados",
+    "js": "codigo",
+    "ts": "codigo",
+    "json": "dados"
+  },
+  "fileNames": {
+    "manifest.json": "plugin",
+    "catsuite.projeto.json": "plugin",
+    "catsuite.d.ts": "plugin"
+  },
+  "languageIds": {
+    "catsuite-plugin": "plugin"
+  },
+  "showLanguageModeIcons": true
+}

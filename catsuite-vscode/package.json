@@ -1,0 +1,508 @@
+{
+  "name": "catsuite-studio",
+  "displayName": "CatSuite Studio",
+  "description": "%descricao%",
+  "version": "1.2.0",
+  "publisher": "netcattest",
+  "homepage": "https://netcattest.com/catsuite",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other",
+    "Themes",
+    "Snippets"
+  ],
+  "keywords": [
+    "catsuite",
+    "catplug",
+    "catflow",
+    "plugins",
+    "security",
+    "QuickJS"
+  ],
+  "main": "./dist/extensao.js",
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "workspaceContains:**/catsuite.projeto.json",
+    "workspaceContains:**/manifest.json",
+    "onLanguage:javascript",
+    "onLanguage:json",
+    "onCustomEditor:catsuite.pacote",
+    "onView:catsuite.projetos",
+    "onStartupFinished",
+    "onLanguage:catsuite-plugin"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": "limited",
+      "description": "%confianca%"
+    },
+    "virtualWorkspaces": {
+      "supported": false,
+      "description": "%virtual%"
+    }
+  },
+  "scripts": {
+    "compilar": "node scripts/compilar.mjs",
+    "verificar": "tsc --noEmit",
+    "testar": "npm run compilar && node --test dist/testes/*.test.js",
+    "testar:vscode": "npm run compilar && node scripts/testar-vscode.mjs",
+    "vscode:prepublish": "npm run verificar && npm run compilar",
+    "empacotar": "node scripts/empacotar.mjs",
+    "listar:pacote": "vsce ls --tree",
+    "testar:visual": "node scripts/testar-visual.mjs"
+  },
+  "dependencies": {
+    "quickjs-emscripten": "0.32.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "22.15.30",
+    "@types/vscode": "1.100.0",
+    "@types/yauzl": "2.10.3",
+    "@types/yazl": "2.4.5",
+    "@vscode/test-electron": "3.1.0",
+    "@vscode/vsce": "4.0.0",
+    "acorn": "8.15.0",
+    "esbuild": "0.25.12",
+    "hash-wasm": "4.12.0",
+    "jsonc-parser": "3.3.1",
+    "typescript": "5.9.3",
+    "yauzl": "3.4.0",
+    "yazl": "3.3.1"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "catsuite.painel",
+        "title": "%painel%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.criarProjeto",
+        "title": "%criarProjeto%",
+        "category": "CatSuite",
+        "icon": "$(add)"
+      },
+      {
+        "command": "catsuite.validarProjeto",
+        "title": "%validarProjeto%",
+        "category": "CatSuite",
+        "icon": "$(shield)"
+      },
+      {
+        "command": "catsuite.simularProjeto",
+        "title": "%simularProjeto%",
+        "category": "CatSuite",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "catsuite.empacotarProjeto",
+        "title": "%empacotarProjeto%",
+        "category": "CatSuite",
+        "icon": "$(package)"
+      },
+      {
+        "command": "catsuite.aplicarEstilo",
+        "title": "%aplicarEstilo%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.restaurarEstilo",
+        "title": "%restaurarEstilo%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.inspecionarPacote",
+        "title": "%inspecionarPacote%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.atualizarHashes",
+        "title": "%atualizarHashes%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.inserirRecurso",
+        "title": "%inserirRecurso%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.criarFluxo",
+        "title": "%criarFluxo%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.verIdentidade",
+        "title": "%verIdentidade%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.exportarIdentidade",
+        "title": "%exportarIdentidade%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.importarIdentidade",
+        "title": "%importarIdentidade%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.escolherIdioma",
+        "title": "%escolherIdioma%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.abrirConfiguracoes",
+        "title": "%abrirConfiguracoes%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.confiarAutor",
+        "title": "%confiarAutor%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.removerAutor",
+        "title": "%removerAutor%",
+        "category": "CatSuite",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "catsuite.atualizar",
+        "title": "%atualizar%",
+        "category": "CatSuite",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "catsuite.novoScript",
+        "title": "%novoScript%",
+        "category": "CatSuite",
+        "icon": {
+          "light": "midia/icone.png",
+          "dark": "midia/icone.png"
+        }
+      },
+      {
+        "command": "catsuite.abrirScript",
+        "title": "%abrirScript%",
+        "category": "CatSuite",
+        "icon": {
+          "light": "midia/icone.png",
+          "dark": "midia/icone.png"
+        }
+      },
+      {
+        "command": "catsuite.editarPacote",
+        "title": "%editarPacote%",
+        "category": "CatSuite",
+        "icon": {
+          "light": "midia/icone.png",
+          "dark": "midia/icone.png"
+        }
+      },
+      {
+        "command": "catsuite.aplicarIcones",
+        "title": "%aplicarIcones%",
+        "category": "CatSuite",
+        "icon": {
+          "light": "midia/icone.png",
+          "dark": "midia/icone.png"
+        }
+      }
+    ],
+    "configuration": {
+      "title": "CatSuite Studio",
+      "properties": {
+        "catsuite.idioma": {
+          "type": "string",
+          "enum": [
+            "sistema",
+            "pt-BR",
+            "en"
+          ],
+          "default": "sistema",
+          "enumDescriptions": [
+            "%idiomaSistema%",
+            "%idiomaPt%",
+            "%idiomaEn%"
+          ],
+          "description": "%idiomaConfiguracao%",
+          "scope": "window"
+        },
+        "catsuite.validacaoContinua": {
+          "type": "boolean",
+          "default": true,
+          "description": "%validacaoConfiguracao%"
+        },
+        "catsuite.estiloPainel": {
+          "type": "string",
+          "enum": [
+            "catsuite",
+            "editor"
+          ],
+          "default": "catsuite",
+          "enumDescriptions": [
+            "%painelCat%",
+            "%painelEditor%"
+          ],
+          "description": "%painelConfiguracao%"
+        },
+        "catsuite.autor": {
+          "type": "string",
+          "default": "",
+          "description": "%autorConfiguracao%"
+        },
+        "catsuite.sugestoesGlobais": {
+          "type": "boolean",
+          "default": true,
+          "description": "%sugestoesGlobais%"
+        }
+      }
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "catsuite",
+          "title": "CatSuite",
+          "icon": "midia/catsuite.svg"
+        }
+      ]
+    },
+    "views": {
+      "catsuite": [
+        {
+          "id": "catsuite.projetos",
+          "name": "%projetosTitulo%"
+        },
+        {
+          "id": "catsuite.recursos",
+          "name": "%sdkTitulo%"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "catsuite.projetos",
+        "contents": "%boasVindas%",
+        "when": "catsuite.semProjetos"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "catsuite.criarProjeto",
+          "when": "view == catsuite.projetos",
+          "group": "navigation@1"
+        },
+        {
+          "command": "catsuite.atualizar",
+          "when": "view == catsuite.projetos",
+          "group": "navigation@2"
+        },
+        {
+          "command": "catsuite.painel",
+          "when": "view == catsuite.projetos",
+          "group": "navigation@3"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "catsuite.validarProjeto",
+          "when": "resourceFilename == manifest.json || resourceExtname == .catflow",
+          "group": "navigation@1"
+        },
+        {
+          "command": "catsuite.simularProjeto",
+          "when": "catsuite.projetoAtivo && isWorkspaceTrusted",
+          "group": "navigation@2"
+        },
+        {
+          "command": "catsuite.abrirScript",
+          "when": "catsuite.projetoAtivo",
+          "group": "navigation@0"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "catsuite.inspecionarPacote",
+          "when": "resourceExtname == .catplug || resourceExtname == .catdata || resourceExtname == .catflow",
+          "group": "catsuite@1"
+        },
+        {
+          "command": "catsuite.abrirScript",
+          "when": "resourceExtname == .catplug || resourceExtname == .catjs",
+          "group": "catsuite@2"
+        },
+        {
+          "command": "catsuite.editarPacote",
+          "when": "resourceExtname == .catplug",
+          "group": "catsuite@3"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "catsuite.painel",
+        "key": "ctrl+alt+c",
+        "mac": "cmd+alt+c",
+        "when": "!terminalFocus"
+      },
+      {
+        "command": "catsuite.validarProjeto",
+        "key": "ctrl+alt+v",
+        "mac": "cmd+alt+v",
+        "when": "catsuite.projetoAtivo"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": [
+          "**/manifest.json"
+        ],
+        "url": "./esquemas/manifesto.schema.json"
+      },
+      {
+        "fileMatch": [
+          "**/catsuite.projeto.json"
+        ],
+        "url": "./esquemas/projeto.schema.json"
+      },
+      {
+        "fileMatch": [
+          "*.catflow"
+        ],
+        "url": "./esquemas/fluxo.schema.json"
+      },
+      {
+        "fileMatch": [
+          "*.catdata"
+        ],
+        "url": "./esquemas/dados.schema.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "json",
+        "extensions": [
+          ".catflow",
+          ".catdata"
+        ]
+      },
+      {
+        "id": "catsuite-plugin",
+        "extensions": [
+          ".catplug",
+          ".catjs"
+        ],
+        "aliases": [
+          "CatPlug",
+          "CatSuite Plugin",
+          "catsuite"
+        ],
+        "configuration": "./esquemas/linguagem.json",
+        "icon": {
+          "light": "./midia/icone.png",
+          "dark": "./midia/icone.png"
+        }
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "catsuite.pacote",
+        "displayName": "%editorPacote%",
+        "selector": [
+          {
+            "filenamePattern": "*.catplug"
+          }
+        ],
+        "priority": "option"
+      },
+      {
+        "viewType": "catsuite.documento",
+        "displayName": "%editorPacote%",
+        "selector": [
+          {
+            "filenamePattern": "*.catdata"
+          },
+          {
+            "filenamePattern": "*.catflow"
+          }
+        ],
+        "priority": "option"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./trechos/catsuite.code-snippets"
+      },
+      {
+        "language": "catsuite-plugin",
+        "path": "./trechos/catsuite.code-snippets"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "catsuite-arquivos",
+        "label": "%iconeTema%",
+        "path": "./temas/catsuite-icon-theme.json"
+      }
+    ],
+    "themes": [
+      {
+        "id": "CatSuite Cyber",
+        "label": "CatSuite Cyber",
+        "uiTheme": "vs-dark",
+        "path": "./temas/cyber-color-theme.json"
+      },
+      {
+        "id": "CatSuite Comfort",
+        "label": "%temaConforto%",
+        "uiTheme": "vs-dark",
+        "path": "./temas/conforto-color-theme.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "catsuite-plugin",
+        "scopeName": "source.catsuite",
+        "path": "./esquemas/catsuite.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[catsuite-plugin]": {
+        "editor.quickSuggestions": {
+          "other": "on",
+          "comments": "off",
+          "strings": "off"
+        },
+        "editor.suggestOnTriggerCharacters": true
+      }
+    }
+  },
+  "icon": "midia/icone.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netcattest/catsuite.git",
+    "directory": "catsuite-vscode"
+  }
+}

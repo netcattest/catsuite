@@ -1,0 +1,722 @@
+{
+  "format": "catbridge-capability-contracts",
+  "version": 1,
+  "sdk": "1.4.0",
+  "catalog": [
+    {
+      "id": "http.probe",
+      "area": "http",
+      "stage": 1,
+      "title": {
+        "pt-BR": "Identificar serviços HTTP",
+        "en": "Identify HTTP services"
+      },
+      "engines": [
+        "httpx"
+      ],
+      "inputs": [
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "state": "implemented",
+      "contractVersion": 1
+    },
+    {
+      "id": "web.crawl",
+      "area": "http",
+      "stage": 1,
+      "title": {
+        "pt-BR": "Mapear páginas e JavaScript",
+        "en": "Map pages and JavaScript"
+      },
+      "engines": [
+        "katana"
+      ],
+      "inputs": [
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "state": "implemented",
+      "contractVersion": 1
+    },
+    {
+      "id": "api.schema.test",
+      "area": "api",
+      "stage": 1,
+      "title": {
+        "pt-BR": "Testar contrato OpenAPI",
+        "en": "Test OpenAPI contract"
+      },
+      "engines": [
+        "schemathesis"
+      ],
+      "inputs": [
+        "endpoint",
+        "openapi"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 1
+    },
+    {
+      "id": "nuclei.scan",
+      "area": "security",
+      "stage": 0,
+      "title": {
+        "pt-BR": "Analisar templates revisados",
+        "en": "Analyze reviewed templates"
+      },
+      "engines": [
+        "nuclei"
+      ],
+      "inputs": [
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "analysis"
+      ],
+      "state": "implemented",
+      "contractVersion": 1
+    },
+    {
+      "id": "assets.subdomains.discover",
+      "area": "assets",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Descobrir subdomínios",
+        "en": "Discover subdomains"
+      },
+      "engines": [
+        "subfinder",
+        "amass"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "dns.resolve",
+      "area": "dns",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Resolver DNS",
+        "en": "Resolve DNS"
+      },
+      "engines": [
+        "dnsx"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "dns.enumerate",
+      "area": "dns",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Enumerar DNS",
+        "en": "Enumerate DNS"
+      },
+      "engines": [
+        "dnsx"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "dns.permute",
+      "area": "dns",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Gerar permutações",
+        "en": "Generate permutations"
+      },
+      "engines": [
+        "alterx"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "urls.history",
+      "area": "assets",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Consultar URLs históricas",
+        "en": "Query historical URLs"
+      },
+      "engines": [
+        "gau",
+        "waybackurls"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "endpoint"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "assets.search",
+      "area": "assets",
+      "stage": 2,
+      "title": {
+        "pt-BR": "Consultar fontes externas",
+        "en": "Query external sources"
+      },
+      "engines": [
+        "uncover"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "net.ports.discover",
+      "area": "network",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Descobrir portas TCP",
+        "en": "Discover TCP ports"
+      },
+      "engines": [
+        "naabu",
+        "nmap"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "net.services.fingerprint",
+      "area": "network",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Identificar serviços",
+        "en": "Identify services"
+      },
+      "engines": [
+        "nmap"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "web.paths.fuzz",
+      "area": "http",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Descobrir caminhos",
+        "en": "Discover paths"
+      },
+      "engines": [
+        "ffuf"
+      ],
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "http.parameters.fuzz",
+      "area": "http",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Testar parâmetros HTTP",
+        "en": "Fuzz HTTP parameters"
+      },
+      "engines": [
+        "ffuf"
+      ],
+      "inputs": [
+        "http"
+      ],
+      "outputs": [
+        "analysis"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "web.vhosts.fuzz",
+      "area": "http",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Descobrir hosts virtuais",
+        "en": "Discover virtual hosts"
+      },
+      "engines": [
+        "ffuf"
+      ],
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "http.parameters.discover",
+      "area": "http",
+      "stage": 3,
+      "title": {
+        "pt-BR": "Descobrir parâmetros HTTP",
+        "en": "Discover HTTP parameters"
+      },
+      "engines": [
+        "arjun"
+      ],
+      "inputs": [
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "analysis"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "web.xss.analyze",
+      "area": "security",
+      "stage": 4,
+      "title": {
+        "pt-BR": "Analisar XSS",
+        "en": "Analyze XSS"
+      },
+      "engines": [
+        "dalfox"
+      ],
+      "inputs": [
+        "http"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "api.sqli.validate",
+      "area": "security",
+      "stage": 4,
+      "title": {
+        "pt-BR": "Validar suspeitas de SQL injection",
+        "en": "Validate suspected SQL injection"
+      },
+      "engines": [
+        "sqlmap"
+      ],
+      "inputs": [
+        "http"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "jwt.analyze",
+      "area": "security",
+      "stage": 4,
+      "title": {
+        "pt-BR": "Analisar JWT",
+        "en": "Analyze JWT"
+      },
+      "engines": [
+        "jwt_tool"
+      ],
+      "inputs": [
+        "jwt",
+        "http"
+      ],
+      "outputs": [
+        "analysis",
+        "jwt",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "tls.assess",
+      "area": "network",
+      "stage": 4,
+      "title": {
+        "pt-BR": "Analisar TLS e SSL",
+        "en": "Assess TLS and SSL"
+      },
+      "engines": [
+        "testssl"
+      ],
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "web.server.assess",
+      "area": "security",
+      "stage": 4,
+      "title": {
+        "pt-BR": "Analisar servidor web",
+        "en": "Assess web server"
+      },
+      "engines": [
+        "nikto"
+      ],
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "code.secrets.scan",
+      "area": "code",
+      "stage": 5,
+      "title": {
+        "pt-BR": "Encontrar candidatos a segredos",
+        "en": "Find secret candidates"
+      },
+      "engines": [
+        "trufflehog",
+        "gitleaks"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "secret",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    },
+    {
+      "id": "code.sast.scan",
+      "area": "code",
+      "stage": 5,
+      "title": {
+        "pt-BR": "Analisar código estático",
+        "en": "Analyze source code"
+      },
+      "engines": [
+        "semgrep"
+      ],
+      "inputs": [
+        "record",
+        "endpoint",
+        "http"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "state": "implemented",
+      "contractVersion": 2,
+      "validation": "pending-linux-integration",
+      "limits": {
+        "targets": 25,
+        "rate": 5,
+        "connections": 2,
+        "timeout": 300,
+        "requests": 500,
+        "maxResults": 1000,
+        "resourceBytes": 2097152,
+        "ports": 32
+      }
+    }
+  ],
+  "signature": {
+    "algorithm": "Ed25519",
+    "publicKey": "lE0lRAPq8waDBkG8h9+ap++gvwz//we8VQ1VLFUnbVc=",
+    "value": "2q5DfDToIoCajCmQrxzAF1DQiNWMJwu6UKyDUSp7SBoR6k+WbNvMHsi3ecUj3xIrjQp9YqNoXlGjL4IeL2avBA=="
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "code": "123456789012345678901234",
+  "target": "https://127.0.0.1:8743/v2/pair/info",
+  "challenge": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+  "body": "{\"protocol\":2,\"name\":\"CatBridge\"}",
+  "proof": "c9FvkXdUxkFSru5YZIKFozFT0LEB8mXFVpkWyZae3Tk"
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "aurora-cache",
+    "name": {
+      "pt-BR": "Aurora — Política de cache fictícia",
+      "en": "Aurora — Fictional cache policy"
+    },
+    "path": "aurora-cache.yaml",
+    "sha256": "7f72ccc70fae2cb255cb18b596c57db53cc01c83e02d14634d73bce5256f4ba2"
+  }
+]

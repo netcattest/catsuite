@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CatSuite · Project",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "files",
+    "fixture"
+  ],
+  "properties": {
+    "format": {
+      "const": "catsuite-project"
+    },
+    "version": {
+      "const": 1
+    },
+    "model": {
+      "enum": [
+        "painel",
+        "analise",
+        "headers",
+        "fluxo",
+        "parser"
+      ]
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true,
+      "maxItems": 500
+    },
+    "fixture": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

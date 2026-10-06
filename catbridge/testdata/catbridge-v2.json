@@ -1,0 +1,62 @@
+{
+  "body": "eyJjYXBhYmlsaXR5IjoibnVjbGVpLnNjYW4iLCJyZXZpc2lvbiI6ImZpeHR1cmUifQ==",
+  "identity": "12345678-1234-4234-8234-123456789012",
+  "method": "POST",
+  "now": 1700000000,
+  "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEgu3ntkXAFMOSMokJJ6X99L+Nf4lwvnSsomJp6I944K7gCsr4o0/0I2SHig6Uh7D8SACndrrPmqMIU2KoMYyWYw==",
+  "request": {
+    "Content-Digest": [
+      "sha-256=:WzKNMpCjCvQ/d7fafESMooLi1hQFKnNewtHwlgxh9o8=:"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Signature": [
+      "cat=:bKkH05Ot93rrexdUgDqR5NneXUkQkVe0E2oegTbtw9jAiqIB20pMqx+2DhG5/UtR0uuoaleTVhNYXlH9S0MZCA==:"
+    ],
+    "Signature-Input": [
+      "cat=(\"@method\" \"@target-uri\" \"content-digest\" \"content-type\" \"x-cat-protocol\" \"x-cat-device\" \"x-cat-message\" \"x-cat-request\");created=1700000000;expires=1700000060;nonce=\"jyZWmMn60zuO14E6G7SknZp6yAARiHELKZ_nitJ86oU\";keyid=\"12345678-1234-4234-8234-123456789012\";alg=\"ecdsa-p256-sha256\""
+    ],
+    "X-Cat-Device": [
+      "12345678-1234-4234-8234-123456789012"
+    ],
+    "X-Cat-Message": [
+      "9CQaJvjaftXCkl_6mV_14Dt2Lw0KS3_V4jh1gKscTU8"
+    ],
+    "X-Cat-Protocol": [
+      "2"
+    ],
+    "X-Cat-Request": [
+      "none"
+    ]
+  },
+  "requestMessage": "9CQaJvjaftXCkl_6mV_14Dt2Lw0KS3_V4jh1gKscTU8",
+  "response": {
+    "Content-Digest": [
+      "sha-256=:b2C0mwol6BJ82HvXhnGrhEW4paWRzBYOVlX5bqoCQhc=:"
+    ],
+    "Content-Type": [
+      "application/json"
+    ],
+    "Signature": [
+      "cat=:fhNerGs+H8qOBJr2USze3+Q66wbY4nh28fQwRgwBWEzL0QN+MEoSpX95GKz+tPDBUdj6oDk2WFewIWZjoVM6dQ==:"
+    ],
+    "Signature-Input": [
+      "cat=(\"@status\" \"@method\";req \"@target-uri\";req \"content-digest\" \"content-type\" \"x-cat-protocol\" \"x-cat-device\" \"x-cat-message\" \"x-cat-request\");created=1700000000;expires=1700000060;nonce=\"ov56Yw3Avzpb7bhadXYU--5YopOROVAaljoCNxf_WB8\";keyid=\"12345678-1234-4234-8234-123456789012\";alg=\"ecdsa-p256-sha256\""
+    ],
+    "X-Cat-Device": [
+      "12345678-1234-4234-8234-123456789012"
+    ],
+    "X-Cat-Message": [
+      "qDw2li_qsUNCRGPnef0sJWmryNtosP-jROqyLkVx93I"
+    ],
+    "X-Cat-Protocol": [
+      "2"
+    ],
+    "X-Cat-Request": [
+      "9CQaJvjaftXCkl_6mV_14Dt2Lw0KS3_V4jh1gKscTU8"
+    ]
+  },
+  "responseBody": "eyJpZCI6ImZpeHR1cmUiLCJzdGF0dXMiOiJjb21wbGV0ZSIsInJlc3VsdHMiOltdfQ==",
+  "target": "https://bridge.test:8743/v2/jobs"
+}
