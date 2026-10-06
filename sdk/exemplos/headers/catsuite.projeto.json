@@ -1,0 +1,10 @@
+{
+  "format": "catsuite-project",
+  "version": 1,
+  "model": "headers",
+  "files": [
+    "fixtures/resposta.json",
+    "src/principal.js"
+  ],
+  "fixture": "fixtures/resposta.json"
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.3.0",
+  "id": "lab.capabilities",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "4f782de0-db80-4fcd-983f-3bc795f12fa7",
+  "lineageId": "affd99b6-3826-577b-a841-363b19ba6f91",
+  "name": {
+    "pt-BR": "Aurora — Capacidades HTTP",
+    "en": "Aurora — HTTP capabilities"
+  },
+  "description": {
+    "pt-BR": "Etapa editável de identificação HTTP com CatBridge e limites aprovados.",
+    "en": "Editable HTTP probe step using CatBridge and approved budgets."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "connector.run"
+  ],
+  "targets": [
+    "api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "2003fa528f0f5153f16d24a0d35fc3fd5905da744d01242433b3831d74e7de1f"
+  },
+  "parentRevision": "b75629df-c9fc-528a-89ee-1eca779955f8"
+}

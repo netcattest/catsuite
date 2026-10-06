@@ -1,0 +1,171 @@
+{
+  "format": "catflow",
+  "formatVersion": 5,
+  "requiresSdk": "1.4.0",
+  "id": "926e83ad-31f8-5279-a3d3-b298d3ee4a56",
+  "name": {
+    "pt-BR": "Descoberta de ativos — Laboratório",
+    "en": "Asset discovery — Laboratory"
+  },
+  "trigger": "manual",
+  "network": false,
+  "laboratory": true,
+  "protection": "PUBLIC",
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "methods": [
+    "GET"
+  ],
+  "connectors": [
+    "catsuite.laboratory"
+  ],
+  "nodes": [
+    {
+      "id": "capture",
+      "kind": "capture",
+      "inputs": [],
+      "outputs": [
+        "http"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 70
+    },
+    {
+      "id": "step0",
+      "kind": "connector",
+      "inputs": [
+        "http",
+        "record",
+        "endpoint"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {
+        "connector": "catsuite.laboratory",
+        "tool": "subfinder",
+        "capability": "assets.subdomains.discover",
+        "parameters": {
+          "profile": "external-approved",
+          "methods": [
+            "GET"
+          ],
+          "requests": 50,
+          "maxResults": 200,
+          "providers": [
+            "crtsh"
+          ]
+        }
+      },
+      "x": 80,
+      "y": 255
+    },
+    {
+      "id": "step1",
+      "kind": "connector",
+      "inputs": [
+        "http",
+        "record",
+        "endpoint"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {
+        "connector": "catsuite.laboratory",
+        "tool": "dnsx",
+        "capability": "dns.resolve",
+        "parameters": {
+          "profile": "read-only",
+          "methods": [
+            "GET"
+          ],
+          "requests": 50,
+          "maxResults": 200,
+          "recordTypes": [
+            "A",
+            "AAAA"
+          ]
+        }
+      },
+      "x": 80,
+      "y": 440
+    },
+    {
+      "id": "step2",
+      "kind": "connector",
+      "inputs": [
+        "http",
+        "record",
+        "endpoint"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {
+        "connector": "catsuite.laboratory",
+        "tool": "naabu",
+        "capability": "net.ports.discover",
+        "parameters": {
+          "profile": "active-approved",
+          "methods": [
+            "GET"
+          ],
+          "requests": 50,
+          "maxResults": 200,
+          "ports": [
+            443
+          ]
+        }
+      },
+      "x": 80,
+      "y": 625
+    },
+    {
+      "id": "report",
+      "kind": "report",
+      "inputs": [
+        "http",
+        "record",
+        "endpoint",
+        "analysis",
+        "finding"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 810
+    }
+  ],
+  "edges": [
+    {
+      "from": "capture",
+      "to": "step0"
+    },
+    {
+      "from": "step0",
+      "to": "step1"
+    },
+    {
+      "from": "step1",
+      "to": "step2"
+    },
+    {
+      "from": "step0",
+      "to": "report"
+    },
+    {
+      "from": "step1",
+      "to": "report"
+    },
+    {
+      "from": "step2",
+      "to": "report"
+    }
+  ],
+  "parentRevision": null
+}

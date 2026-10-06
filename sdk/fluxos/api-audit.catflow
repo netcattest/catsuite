@@ -1,0 +1,336 @@
+{
+  "format": "catflow",
+  "formatVersion": 4,
+  "requiresSdk": "1.3.0",
+  "id": "2c421541-26b5-4e67-995e-c64d52cb59df",
+  "name": {
+    "pt-BR": "Auditoria de API",
+    "en": "API audit"
+  },
+  "trigger": "manual",
+  "network": false,
+  "laboratory": true,
+  "protection": "PUBLIC",
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "methods": [
+    "GET",
+    "HEAD"
+  ],
+  "connectors": [
+    "aurora-bridge"
+  ],
+  "nodes": [
+    {
+      "id": "capture",
+      "kind": "capture",
+      "inputs": [],
+      "outputs": [
+        "http"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 70
+    },
+    {
+      "id": "probe",
+      "kind": "connector",
+      "inputs": [
+        "http",
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "config": {
+        "connector": "aurora-bridge",
+        "capability": "http.probe",
+        "tool": "httpx",
+        "parameters": {
+          "profile": "read-only",
+          "methods": [
+            "GET"
+          ],
+          "requests": 100
+        }
+      },
+      "x": 80,
+      "y": 255
+    },
+    {
+      "id": "crawl",
+      "kind": "connector",
+      "inputs": [
+        "http",
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "config": {
+        "connector": "aurora-bridge",
+        "capability": "web.crawl",
+        "tool": "katana",
+        "parameters": {
+          "profile": "read-only",
+          "methods": [
+            "GET"
+          ],
+          "requests": 100,
+          "depth": 2,
+          "pages": 25
+        }
+      },
+      "x": 80,
+      "y": 440
+    },
+    {
+      "id": "join",
+      "kind": "join",
+      "inputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 625
+    },
+    {
+      "id": "compare",
+      "kind": "parser",
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "config": {
+        "mode": "openapi-compare",
+        "schemaFrom": "schema"
+      },
+      "x": 80,
+      "y": 810
+    },
+    {
+      "id": "schema",
+      "kind": "connector",
+      "inputs": [
+        "endpoint",
+        "openapi"
+      ],
+      "outputs": [
+        "analysis",
+        "finding"
+      ],
+      "config": {
+        "connector": "aurora-bridge",
+        "capability": "api.schema.test",
+        "tool": "schemathesis",
+        "parameters": {
+          "profile": "read-only",
+          "methods": [
+            "GET"
+          ],
+          "requests": 1000,
+          "examples": 25,
+          "seed": 7,
+          "operations": [
+            "GET /api/valid",
+            "GET /api/broken",
+            "GET /api/crash"
+          ],
+          "paths": [
+            "/api/valid",
+            "/api/broken",
+            "/api/crash"
+          ]
+        },
+        "baseUrl": "https://api.aurora.test",
+        "schemaId": "86a78faeb94afe803a4430962b334bae04e8d331902750becebbf328331597c8",
+        "schemaHash": "4ba543f42d7697214f2ec4a70db0ac1688fe68086e9b4b3b09a4860062b17f14"
+      },
+      "x": 80,
+      "y": 995
+    },
+    {
+      "id": "report",
+      "kind": "report",
+      "inputs": [
+        "endpoint",
+        "analysis",
+        "finding"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 1180
+    }
+  ],
+  "edges": [
+    {
+      "from": "capture",
+      "to": "probe"
+    },
+    {
+      "from": "probe",
+      "to": "crawl"
+    },
+    {
+      "from": "probe",
+      "to": "join"
+    },
+    {
+      "from": "crawl",
+      "to": "join"
+    },
+    {
+      "from": "join",
+      "to": "compare"
+    },
+    {
+      "from": "compare",
+      "to": "schema"
+    },
+    {
+      "from": "compare",
+      "to": "report"
+    },
+    {
+      "from": "schema",
+      "to": "report"
+    }
+  ],
+  "resources": [
+    {
+      "id": "86a78faeb94afe803a4430962b334bae04e8d331902750becebbf328331597c8",
+      "flow": "2c421541-26b5-4e67-995e-c64d52cb59df",
+      "sha256": "4ba543f42d7697214f2ec4a70db0ac1688fe68086e9b4b3b09a4860062b17f14",
+      "name": "Aurora OpenAPI",
+      "schema": {
+        "openapi": "3.0.3",
+        "info": {
+          "title": "Aurora",
+          "version": "1"
+        },
+        "paths": {
+          "/api/valid": {
+            "get": {
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/broken": {
+            "get": {
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/crash": {
+            "get": {
+              "responses": {
+                "200": {
+                  "description": "OK"
+                }
+              }
+            }
+          },
+          "/api/auth": {
+            "get": {
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/timeout": {
+            "get": {
+              "responses": {
+                "200": {
+                  "description": "OK",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "integer"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "parentRevision": null
+}

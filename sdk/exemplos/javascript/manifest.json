@@ -1,0 +1,48 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.2.0",
+  "id": "lab.javascript",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "ab4ced34-d892-4ca7-a923-e358eeac87dd",
+  "lineageId": "7565cf77-9a73-551a-8440-888ab8e2519b",
+  "name": {
+    "pt-BR": "JavaScript — Fontes",
+    "en": "JavaScript — Sources"
+  },
+  "description": {
+    "pt-BR": "Módulo editável para fluxos com dados fictícios.",
+    "en": "Editable workflow module using fictional data."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "storage",
+    "parsers"
+  ],
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {
+    "laboratory": true
+  },
+  "settingsSchema": {
+    "laboratory": {
+      "type": "boolean",
+      "title": {
+        "pt-BR": "Modo laboratório",
+        "en": "Laboratory mode"
+      }
+    }
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "c104f5982ababb07dff16dc2b5e0e5ab8e0231f3be9ec38a1c3f1789e859e560",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "d38673ea-2b80-5630-ad94-10e1ec08fab6"
+}

@@ -1,0 +1,10 @@
+{
+  "format": "catsuite-project",
+  "version": 1,
+  "model": "fluxo",
+  "files": [
+    "fixtures/resposta.json",
+    "src/principal.js"
+  ],
+  "fixture": "fixtures/resposta.json"
+}

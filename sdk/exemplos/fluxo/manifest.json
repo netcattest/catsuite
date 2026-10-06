@@ -1,0 +1,32 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.4.0",
+  "id": "exemplo.fluxo",
+  "version": "1.0.0",
+  "author": "NetCatTest",
+  "entry": "src/principal.js",
+  "revisionId": "17200977-c28c-417a-b990-0444c05a2c57",
+  "lineageId": "cd070778-4f57-4910-97b4-d31801a79540",
+  "name": {
+    "pt-BR": "Etapa de fluxo",
+    "en": "Workflow step"
+  },
+  "description": {
+    "pt-BR": "Extensão criada no CatSuite Studio.",
+    "en": "Extension created in CatSuite Studio."
+  },
+  "permissions": [
+    "pipeline.step"
+  ],
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "src/principal.js": "36bad3556d51d6e234905519c0cf6ec57da384e532ad7c08325ca42100bc7efd"
+  },
+  "parentRevision": "9d830362-bf16-4252-8ea4-3652f18e7089"
+}

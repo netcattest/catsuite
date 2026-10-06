@@ -1,0 +1,194 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CatSuite · Workflow",
+  "type": "object",
+  "required": [
+    "format",
+    "formatVersion",
+    "id",
+    "name",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "format": {
+      "const": "catflow"
+    },
+    "formatVersion": {
+      "enum": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "id": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "name": {
+      "type": "object",
+      "properties": {
+        "pt-BR": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "protection": {
+      "enum": [
+        "PUBLIC",
+        "PROTECTED",
+        "SECRET"
+      ]
+    },
+    "trigger": {
+      "enum": [
+        "manual",
+        "capture"
+      ]
+    },
+    "targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "network": {
+      "type": "boolean"
+    },
+    "laboratory": {
+      "type": "boolean"
+    },
+    "nodes": {
+      "type": "array",
+      "maxItems": 128,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "inputs",
+          "outputs"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "capture",
+              "filter",
+              "condition",
+              "join",
+              "parser",
+              "request",
+              "crawler",
+              "storage",
+              "report",
+              "connector",
+              "extension"
+            ]
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "http",
+                "endpoint",
+                "jwt",
+                "secret",
+                "analysis",
+                "finding",
+                "record",
+                "javascript",
+                "openapi"
+              ]
+            }
+          },
+          "outputs": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "http",
+                "endpoint",
+                "jwt",
+                "secret",
+                "analysis",
+                "finding",
+                "record",
+                "javascript",
+                "openapi"
+              ]
+            }
+          },
+          "extension": {
+            "type": "string"
+          },
+          "step": {
+            "type": "string"
+          },
+          "config": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "maxItems": 256,
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to"
+        ],
+        "properties": {
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          },
+          "when": {
+            "enum": [
+              "",
+              "true",
+              "false"
+            ]
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "publicKey",
+        "value"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "Ed25519"
+        },
+        "publicKey": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/]{43}=$"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/]{86}==$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

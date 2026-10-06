@@ -1,0 +1,24 @@
+{
+  "name": "catsuite-extension-sdk",
+  "version": "1.4.0",
+  "apiVersion": 1,
+  "runtime": "QuickJS",
+  "runtimeFile": "sdk.js",
+  "types": "catsuite.d.ts",
+  "formats": {
+    "catplug": 2,
+    "catflow": [
+      3,
+      4,
+      5
+    ]
+  },
+  "languages": [
+    "pt-BR",
+    "en"
+  ],
+  "schemas": "esquemas",
+  "examples": "exemplos",
+  "workflows": "fluxos",
+  "capabilityContracts": "capability-contracts.json"
+}

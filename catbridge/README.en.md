@@ -80,4 +80,4 @@ Keep the state directory, keys, certificates, codes and logs private. Restrict s
 
 [Windows 64-bit](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/catbridge-windows-amd64.zip) · [Linux 64-bit](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/catbridge-linux-amd64.tar.gz) · [SHA-256](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/SHA256SUMS.txt)
 
-[SDK](../catsuite-vscode/sdk/catsuite.d.ts)
+[SDK](../sdk/catsuite.d.ts)

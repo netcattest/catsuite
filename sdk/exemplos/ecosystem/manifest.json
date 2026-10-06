@@ -1,0 +1,35 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.4.0",
+  "id": "lab.ecosystem",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "99a1c241-5d9e-4413-b76b-dbe05d1efac3",
+  "lineageId": "93317116-a0df-5bdd-b189-073037dd50ba",
+  "name": {
+    "pt-BR": "Aurora — Proveniência do ecossistema",
+    "en": "Aurora — Ecosystem provenance"
+  },
+  "description": {
+    "pt-BR": "Consolida origem, versão, proteção e hashes dos resultados sem copiar conteúdo sensível.",
+    "en": "Collects result origins, versions, protection and hashes without copying sensitive contents."
+  },
+  "permissions": [
+    "pipeline.step",
+    "storage",
+    "ui.tab"
+  ],
+  "targets": [
+    "api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "a28f536993d08f5fdcbe3af066670cb95900d8faefa12d51407593f4a6674768",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "8d6cbe4f-da63-47a7-8c0b-ca849bc696dd"
+}

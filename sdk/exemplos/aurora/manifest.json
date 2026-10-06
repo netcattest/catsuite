@@ -1,0 +1,45 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "id": "lab.aurora",
+  "version": "1.0.0",
+  "author": "CatSuite",
+  "entry": "main.js",
+  "name": {
+    "pt-BR": "Aurora — Auditor de Respostas",
+    "en": "Aurora — Response Auditor"
+  },
+  "description": {
+    "pt-BR": "Laboratório fictício completo para extensões e análise de respostas.",
+    "en": "Complete fictional laboratory for extensions and response analysis."
+  },
+  "permissions": [
+    "traffic.read",
+    "traffic.modify",
+    "http.send",
+    "external.call",
+    "ui.menu",
+    "ui.tab",
+    "storage",
+    "findings",
+    "repeater",
+    "commands"
+  ],
+  "targets": [
+    "api.aurora.test"
+  ],
+  "externalHosts": [
+    "advisories.aurora.test"
+  ],
+  "settings": {
+    "laboratory": true
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "fixtures.json": "274c2c721b2b17cd5df17b58189e053f983ba0094864644ba84e7f73a85dc70c",
+    "main.js": "84f7f8620e4ccde480b3a929483f51a0d051c2fe89443ecd4409faea663e071b"
+  },
+  "revisionId": "785d9068-ae75-4b31-969d-4b79c603a6df",
+  "lineageId": "9550f22a-b9f5-52c7-b751-aab88043d9d2",
+  "requiresSdk": "1.4.0"
+}

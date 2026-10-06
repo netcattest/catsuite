@@ -1,0 +1,33 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.4.0",
+  "id": "exemplo.analise",
+  "version": "1.0.0",
+  "author": "NetCatTest",
+  "entry": "src/principal.js",
+  "revisionId": "abbffa5e-ff57-4e9b-9c75-c3d9be5fc266",
+  "lineageId": "02029899-e603-406d-ba66-a8088d3963cd",
+  "name": {
+    "pt-BR": "Análise de tráfego",
+    "en": "Traffic analysis"
+  },
+  "description": {
+    "pt-BR": "Extensão criada no CatSuite Studio.",
+    "en": "Extension created in CatSuite Studio."
+  },
+  "permissions": [
+    "traffic.read",
+    "findings"
+  ],
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "src/principal.js": "4c2450a6e9bb897f1bcff6b2183009b28920735144ad7256659dcaf642d625c3"
+  },
+  "parentRevision": "5d27f9f1-4560-41c3-9770-787ae6663dfd"
+}

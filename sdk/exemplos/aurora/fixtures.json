@@ -1,0 +1,11 @@
+{
+  "scenario": "fictional",
+  "routes": [
+    {"url": "https://api.aurora.test/api/perfil", "status": 200, "cacheControl": "public, max-age=600", "body":{"id":"cliente-ficticio-001","nome":"Pessoa do laboratorio","email":"pessoa@aurora.test","scenario":"fictional"}},
+    {"url": "https://api.aurora.test/api/perfil/seguro", "status": 200, "cacheControl": "private, no-store", "body":{"id":"cliente-ficticio-001","nome":"Pessoa do laboratorio","email":"pessoa@aurora.test","scenario":"fictional"}},
+    {"url": "https://api.aurora.test/api/pedidos", "status":200,"cacheControl":"private, no-store","body":{"scenario":"fictional","orders":[{"id":"pedido-ficticio-001","total":129.9,"status":"simulado"}]}},
+    {"url": "https://api.aurora.test/timeout", "error": "E_TIMEOUT"},
+    {"url": "https://advisories.aurora.test/advisories?code=CACHE-001", "body":{"code":"CACHE-001","recommendation":"Cache-Control: private, no-store"}},
+    {"url": "https://advisories.aurora.test/error", "error": "E_EXTERNAL"}
+  ]
+}

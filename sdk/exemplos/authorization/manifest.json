@@ -1,0 +1,48 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.2.0",
+  "id": "lab.authorization",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "9228a17f-2108-4d52-a265-f4c04ba2a1d3",
+  "lineageId": "7856329d-665c-58cc-8674-562adfef2aa8",
+  "name": {
+    "pt-BR": "Autorização — Objetos",
+    "en": "Authorization — Objects"
+  },
+  "description": {
+    "pt-BR": "Módulo editável para fluxos com dados fictícios.",
+    "en": "Editable workflow module using fictional data."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "storage",
+    "findings"
+  ],
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {
+    "laboratory": true
+  },
+  "settingsSchema": {
+    "laboratory": {
+      "type": "boolean",
+      "title": {
+        "pt-BR": "Modo laboratório",
+        "en": "Laboratory mode"
+      }
+    }
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "4104b9adcb246616ba202a05e0c78bac923bd11fe32400cd30d2f43a55e5ec30",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "ee45cf8b-6e3a-5f75-8363-e8c0bc9c0d31"
+}

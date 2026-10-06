@@ -1,0 +1,32 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.4.0",
+  "id": "exemplo.headers",
+  "version": "1.0.0",
+  "author": "NetCatTest",
+  "entry": "src/principal.js",
+  "revisionId": "551d8893-c0c7-4406-953b-9c6bad68c4c9",
+  "lineageId": "ef153a7b-36b7-4068-9d2c-66bd05552ee6",
+  "name": {
+    "pt-BR": "Modificação de headers",
+    "en": "Header modification"
+  },
+  "description": {
+    "pt-BR": "Extensão criada no CatSuite Studio.",
+    "en": "Extension created in CatSuite Studio."
+  },
+  "permissions": [
+    "traffic.modify"
+  ],
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "src/principal.js": "9fba24fd1985ae655d00816a30683f958f1d3a7c209c67a01f8fff00764d2f3f"
+  },
+  "parentRevision": "470c730e-aaef-4128-848e-c6b478a1b948"
+}

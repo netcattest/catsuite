@@ -1,0 +1,47 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.2.0",
+  "id": "lab.endpoints",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "d8c4f99c-d03a-43ea-932d-892f29ffe278",
+  "lineageId": "f9a0a1d6-a209-5045-9e73-5d0ef816a99b",
+  "name": {
+    "pt-BR": "Endpoints — Mapa",
+    "en": "Endpoints — Map"
+  },
+  "description": {
+    "pt-BR": "Módulo editável para fluxos com dados fictícios.",
+    "en": "Editable workflow module using fictional data."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "storage"
+  ],
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {
+    "laboratory": true
+  },
+  "settingsSchema": {
+    "laboratory": {
+      "type": "boolean",
+      "title": {
+        "pt-BR": "Modo laboratório",
+        "en": "Laboratory mode"
+      }
+    }
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "0b28220182d7f017d7a1c6a108845f9cd9ab64d94f2b2a39bb8de89bfdbd9926",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "8bb19976-ca8a-584d-b62c-e5e1b920b4ef"
+}

@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "url": "https://api.aurora.test",
+      "contentType": "text/html",
+      "text": "<html><script src=\"/assets/app.js\"></script><a href=\"/api/perfil\">Perfil</a></html>"
+    },
+    {
+      "url": "https://api.aurora.test/",
+      "contentType": "text/html",
+      "text": "<html><script src=\"/assets/app.js\"></script><a href=\"/api/perfil\">Perfil</a></html>"
+    },
+    {
+      "url": "https://api.aurora.test/assets/app.js",
+      "contentType": "application/javascript",
+      "text": "const profile='/api/perfil'; const admin='/api/admin/users'; const users='/api/users/182';"
+    },
+    {
+      "url": "https://api.aurora.test/api/admin/users",
+      "contentType": "application/json",
+      "body": {
+        "scenario": "fictional",
+        "status": "requires-review"
+      }
+    },
+    {
+      "url": "https://api.aurora.test/api/users/182",
+      "contentType": "application/json",
+      "body": {
+        "scenario": "fictional",
+        "id": 182,
+        "owner": "cliente-ficticio-001"
+      }
+    }
+  ]
+}

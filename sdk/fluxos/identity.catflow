@@ -1,0 +1,134 @@
+{
+  "format": "catflow",
+  "formatVersion": 3,
+  "protection": "PUBLIC",
+  "id": "4ba8b89c-50b0-5d36-a8e1-25884ed0369b",
+  "name": {
+    "pt-BR": "Auditoria de identidade",
+    "en": "Identity audit"
+  },
+  "lineageId": "4ba8b89c-50b0-5d36-a8e1-25884ed0369b",
+  "author": "CatSuite Lab",
+  "version": "1.0.0",
+  "requiresSdk": "1.2.0",
+  "trigger": "manual",
+  "laboratory": true,
+  "network": false,
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "methods": [
+    "GET",
+    "HEAD"
+  ],
+  "connectors": [],
+  "nodes": [
+    {
+      "id": "capture",
+      "kind": "capture",
+      "inputs": [],
+      "outputs": [
+        "http"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 70
+    },
+    {
+      "id": "jwt",
+      "kind": "extension",
+      "inputs": [
+        "http"
+      ],
+      "outputs": [
+        "http",
+        "jwt"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 215,
+      "extension": "lab.jwt",
+      "step": "identity.jwt"
+    },
+    {
+      "id": "secrets",
+      "kind": "extension",
+      "inputs": [
+        "http",
+        "jwt"
+      ],
+      "outputs": [
+        "http",
+        "jwt",
+        "secret"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 360,
+      "extension": "lab.secrets",
+      "step": "identity.secrets"
+    },
+    {
+      "id": "authorization",
+      "kind": "extension",
+      "inputs": [
+        "http",
+        "jwt",
+        "secret"
+      ],
+      "outputs": [
+        "http",
+        "jwt",
+        "secret",
+        "analysis",
+        "finding"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 505,
+      "extension": "lab.authorization",
+      "step": "identity.authorization"
+    },
+    {
+      "id": "report",
+      "kind": "extension",
+      "inputs": [
+        "http",
+        "jwt",
+        "secret",
+        "analysis",
+        "finding",
+        "endpoint",
+        "record"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 650,
+      "extension": "lab.report",
+      "step": "identity.report"
+    }
+  ],
+  "edges": [
+    {
+      "from": "capture",
+      "to": "jwt"
+    },
+    {
+      "from": "jwt",
+      "to": "secrets"
+    },
+    {
+      "from": "secrets",
+      "to": "authorization"
+    },
+    {
+      "from": "authorization",
+      "to": "report"
+    }
+  ],
+  "parentRevision": "60cfcf5b37b1f74766631ca41a0b2b17c8f8f6ef45b9b8402889889fb966425a"
+}

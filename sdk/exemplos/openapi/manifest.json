@@ -1,0 +1,47 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.2.0",
+  "id": "lab.openapi",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "9eb1ca92-c604-41aa-a180-f9f69b27efdb",
+  "lineageId": "1cb3f0fb-e0ce-5f0a-9b19-7545e1d603f3",
+  "name": {
+    "pt-BR": "OpenAPI — Comparação",
+    "en": "OpenAPI — Comparison"
+  },
+  "description": {
+    "pt-BR": "Módulo editável para fluxos com dados fictícios.",
+    "en": "Editable workflow module using fictional data."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "storage"
+  ],
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {
+    "laboratory": true
+  },
+  "settingsSchema": {
+    "laboratory": {
+      "type": "boolean",
+      "title": {
+        "pt-BR": "Modo laboratório",
+        "en": "Laboratory mode"
+      }
+    }
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "9211a0e7d1db3c5f3d47745749ccfd3fb50965a581e30a5432d406c7dc5233ba",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "477e2f58-5094-5478-885c-18f4fad0e275"
+}

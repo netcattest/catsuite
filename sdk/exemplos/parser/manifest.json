@@ -1,0 +1,32 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.4.0",
+  "id": "exemplo.parser",
+  "version": "1.0.0",
+  "author": "NetCatTest",
+  "entry": "src/principal.js",
+  "revisionId": "c4623560-37a3-4851-9387-5433b8bccb7a",
+  "lineageId": "cbf3eaa0-2ebb-419f-aeeb-11a640baef24",
+  "name": {
+    "pt-BR": "Parser JSON",
+    "en": "JSON parser"
+  },
+  "description": {
+    "pt-BR": "Extensão criada no CatSuite Studio.",
+    "en": "Extension created in CatSuite Studio."
+  },
+  "permissions": [
+    "parsers"
+  ],
+  "targets": [
+    "https://api.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {},
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "src/principal.js": "2b70532a60b642b549c6b8cd193098c9943a469a1a7e46aa420831693da39897"
+  },
+  "parentRevision": "3b4e1108-05c8-46f1-a561-b0ffb7ae2125"
+}

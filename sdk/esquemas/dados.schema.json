@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CatSuite · Data",
+  "type": "object",
+  "required": [
+    "format",
+    "formatVersion"
+  ],
+  "properties": {
+    "format": {
+      "const": "catdata"
+    },
+    "formatVersion": {
+      "enum": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "signature": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "publicKey",
+        "value"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "Ed25519"
+        },
+        "publicKey": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/]{43}=$"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9+/]{86}==$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "records": {
+      "type": "array"
+    },
+    "findings": {
+      "type": "array"
+    },
+    "protection": {
+      "enum": [
+        "PUBLIC",
+        "PROTECTED",
+        "SECRET"
+      ]
+    }
+  }
+}

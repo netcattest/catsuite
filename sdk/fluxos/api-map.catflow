@@ -1,0 +1,123 @@
+{
+  "format": "catflow",
+  "formatVersion": 3,
+  "protection": "PUBLIC",
+  "id": "0b57b3d1-3b79-5a41-8f40-b4157e3b6b0c",
+  "name": {
+    "pt-BR": "Mapa de API",
+    "en": "API map"
+  },
+  "lineageId": "0b57b3d1-3b79-5a41-8f40-b4157e3b6b0c",
+  "author": "CatSuite Lab",
+  "version": "1.0.0",
+  "requiresSdk": "1.2.0",
+  "trigger": "manual",
+  "laboratory": true,
+  "network": false,
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "methods": [
+    "GET",
+    "HEAD"
+  ],
+  "connectors": [],
+  "nodes": [
+    {
+      "id": "capture",
+      "kind": "crawler",
+      "inputs": [],
+      "outputs": [
+        "http"
+      ],
+      "config": {
+        "url": "https://api.aurora.test/",
+        "method": "GET"
+      },
+      "x": 80,
+      "y": 70
+    },
+    {
+      "id": "javascript",
+      "kind": "extension",
+      "inputs": [
+        "http"
+      ],
+      "outputs": [
+        "http",
+        "javascript"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 215,
+      "extension": "lab.javascript",
+      "step": "api.javascript"
+    },
+    {
+      "id": "endpoints",
+      "kind": "extension",
+      "inputs": [
+        "http",
+        "javascript"
+      ],
+      "outputs": [
+        "endpoint"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 360,
+      "extension": "lab.endpoints",
+      "step": "api.endpoints"
+    },
+    {
+      "id": "openapi",
+      "kind": "extension",
+      "inputs": [
+        "endpoint"
+      ],
+      "outputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 505,
+      "extension": "lab.openapi",
+      "step": "api.openapi"
+    },
+    {
+      "id": "report",
+      "kind": "report",
+      "inputs": [
+        "endpoint",
+        "analysis"
+      ],
+      "outputs": [
+        "record"
+      ],
+      "config": {},
+      "x": 80,
+      "y": 650
+    }
+  ],
+  "edges": [
+    {
+      "from": "capture",
+      "to": "javascript"
+    },
+    {
+      "from": "javascript",
+      "to": "endpoints"
+    },
+    {
+      "from": "endpoints",
+      "to": "openapi"
+    },
+    {
+      "from": "openapi",
+      "to": "report"
+    }
+  ],
+  "parentRevision": "2c05345baac34868f41712e637718acd0cd17c75a9895e52a7ed732d7c82d283"
+}

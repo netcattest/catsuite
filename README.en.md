@@ -70,6 +70,12 @@ Create, edit and validate CatSuite plugins in VS Code, with SDK command suggesti
 
 After downloading the VSIX, open **Extensions → ⋯ → Install from VSIX** in VS Code and select the file. To install from the Marketplace, use the button above or `code --install-extension NetCatTest.catsuite-studio`.
 
+### Extension SDK · 1.4.0
+
+SDK source, API types, schemas, fifteen editable examples and six workflow models for building CatSuite plugins.
+
+[Explore the SDK](./sdk/) · [Download SDK ZIP](https://github.com/netcattest/catsuite/releases/download/sdk-1.4.0/catsuite-sdk-1.4.0.zip) · [SHA-256](https://github.com/netcattest/catsuite/releases/download/sdk-1.4.0/SHA256SUMS.txt)
+
 ### CatBridge
 
 Connect CatSuite to tools on your computer or server through authorized capabilities and signed communication.

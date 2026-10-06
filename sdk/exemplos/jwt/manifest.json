@@ -1,0 +1,47 @@
+{
+  "formatVersion": 2,
+  "apiVersion": 1,
+  "requiresSdk": "1.2.0",
+  "id": "lab.jwt",
+  "version": "1.0.0",
+  "author": "CatSuite Lab",
+  "entry": "main.js",
+  "revisionId": "c84824a6-bc2b-4ede-a615-7ca8779f38cc",
+  "lineageId": "6234ff07-dafb-5c63-8f73-410344157958",
+  "name": {
+    "pt-BR": "JWT — Identidade",
+    "en": "JWT — Identity"
+  },
+  "description": {
+    "pt-BR": "Módulo editável para fluxos com dados fictícios.",
+    "en": "Editable workflow module using fictional data."
+  },
+  "permissions": [
+    "pipeline.step",
+    "traffic.read",
+    "storage"
+  ],
+  "targets": [
+    "api.aurora.test",
+    "advisories.aurora.test"
+  ],
+  "externalHosts": [],
+  "settings": {
+    "laboratory": true
+  },
+  "settingsSchema": {
+    "laboratory": {
+      "type": "boolean",
+      "title": {
+        "pt-BR": "Modo laboratório",
+        "en": "Laboratory mode"
+      }
+    }
+  },
+  "hashes": {
+    "fixtures/resposta.json": "ba5f2179dd9df3ad950702ca7d232c606ba4dacb6b838a5b0c8eaca4feadb522",
+    "main.js": "a2afecb3324d489e8aaafbf9baf29e1981aa58ff41c08fa8f478e7e45fbe99c0",
+    "openapi.json": "417ef44b1d12485338cb4c44b03860457f605e0c08866986e8dfb1dd9af8a25c"
+  },
+  "parentRevision": "cbc9ab93-6c80-5384-8960-a71cd147d61a"
+}

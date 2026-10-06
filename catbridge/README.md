@@ -94,4 +94,4 @@ Mantenha a pasta de estado, chaves, certificados, códigos e logs em local priva
 
 [Windows 64 bits](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/catbridge-windows-amd64.zip) · [Linux 64 bits](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/catbridge-linux-amd64.tar.gz) · [SHA-256](https://github.com/netcattest/catsuite/releases/download/tools-1.2.0/SHA256SUMS.txt)
 
-[SDK](../catsuite-vscode/sdk/catsuite.d.ts)
+[SDK](../sdk/catsuite.d.ts)
